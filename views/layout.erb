@@ -5,6 +5,9 @@
 </head>
   <body>
     <h1>Message Roullete</h1>
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+    <% end %>
     <% if flash[:error] %>
       <%= flash[:error] %><br>
     <% end %>
