@@ -70,8 +70,9 @@ class App < Sinatra::Application
   end
 
   post "/messages/:id/comment" do
-    @comments_table
+    @comments_table.create(params[:id], params[:comment])
 
+    redirect "/"
   end
 
 

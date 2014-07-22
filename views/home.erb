@@ -17,8 +17,9 @@
   </form>
 
   <form method="post" action="/messages/<%= message["id"] %>/comment">
-    <input type="hidden" name="_method" value="delete"/>
-    <input type="submit" value="Delete Message"/>
+    <label for=comment>Comment</label>
+    <input type=text id=comment name=comment >
+    <input type=submit value=Submit>
   </form>
 
 <% end %>
